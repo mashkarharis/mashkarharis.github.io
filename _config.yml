@@ -22,7 +22,7 @@ description: >- # used by seo meta and the atom feed
   At DevsBase, we break down the technology for a wide audience, from aspiring developers to tech pros. Dive into articles that decode industry trends, coding practices, and digital innovations.
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://www.devsbase.com"
+url: "https://www.devsbase.online"
 
 github:
   username: mashkarharis # change to your GitHub username
