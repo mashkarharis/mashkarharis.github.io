@@ -18,7 +18,7 @@ pin: false
 1. **Conciseness**: Reduces the amount of code.
 2. **Readability**: Once familiar with structure, it can make the code easier to read.
 
-## Introduction
+## Structure
 
 As mentioned, We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. Ternary operation is also one of the conditional operations introduced by many programming languages.
 
