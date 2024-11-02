@@ -4,7 +4,7 @@ description: >-
   We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. In this article, we are going to discuss a quick and efficient operation known as Ternary Operation, used to handle conditional tasks in most programming languages.
 author: mashkarharis
 date: 2024-11-01 00:00:00 +0000
-categories: [Java, Optimizations]
+categories: [Optimizations]
 tags: [java, ternary operations, effetive programming, conditional operations, Optimizations]
 pin: false
 ---
