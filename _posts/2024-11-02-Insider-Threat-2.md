@@ -1,8 +1,7 @@
 ---
 title: Did You Know About Insider Threat
 description: >-
-    Traditional security systems mostly focus on external threats. Due to this, there is a high chance of occurring security threats from inside of the company. These types of threats are called ‘Insider Threats’.
-    An insider threat refers to a cyber security risk that originates from within an organization. These threats are occurring from the people who have access to sensitive information of the organization. These persons can be current employees, former employees, contractors, or business associates. They may misuse these security credentials intentionally or unintentionally.
+    Traditional security systems mostly focus on external threats. Due to this, there is a high chance of occurring security threats from inside of the company. These types of threats are called ‘Insider Threats’. An insider threat refers to a cyber security risk that originates from within an organization. These threats are occurring from the people who have access to sensitive information of the organization. These persons can be current employees, former employees, contractors, or business associates. They may misuse these security credentials intentionally or unintentionally.
 author: mashkarharis
 date: 2024-11-02 00:00:00 +0000
 categories: [Security]
@@ -11,7 +10,6 @@ pin: false
 ---
 ## Harmful User Categories
 
-
 1.  Malicious insiders
 2.  Negligent / Careless insiders
 3.  Infiltrators / Mole
@@ -19,10 +17,10 @@ pin: false
 ### Malicious insiders
 someone, who maliciously and intentionally misuse credentials, to steal information for financial or personal purposes.
 
-### Negligent/Careless insiders
+### Negligent / Careless insiders
 someone, who unintentionally puts an organization’s security into risk by making some mistakes.
 
-### Infiltrators/Mole
+### Infiltrators / Mole
 someone, who is an outsider, but managed to obtain insider access to a privileged network.
 
 ## Anomalous Activities
