@@ -1,9 +1,8 @@
 ---
 title: Did You Know About Insider Threat
 description: >-
-Traditional security systems mostly focus on external threats. Due to this, there is a high chance of occurring security threats from inside of the company. These types of threats are called ‘Insider Threats’.
-
-An insider threat refers to a cyber security risk that originates from within an organization. These threats are occurring from the people who have access to sensitive information of the organization. These persons can be current employees, former employees, contractors, or business associates. They may misuse these security credentials intentionally or unintentionally.
+    Traditional security systems mostly focus on external threats. Due to this, there is a high chance of occurring security threats from inside of the company. These types of threats are called ‘Insider Threats’.
+    An insider threat refers to a cyber security risk that originates from within an organization. These threats are occurring from the people who have access to sensitive information of the organization. These persons can be current employees, former employees, contractors, or business associates. They may misuse these security credentials intentionally or unintentionally.
 author: mashkarharis
 date: 2024-11-02 00:00:00 +0000
 categories: [Security]
