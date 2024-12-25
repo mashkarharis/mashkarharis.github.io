@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "DevsBase",
+    "description": "",
+    "home_page_url": "https://mashkarharis.github.io",
+    "feed_url": "https://mashkarharis.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "M Ashkar Haris"
+    },
+    "items": [
+    ]
+}
