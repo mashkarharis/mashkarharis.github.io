@@ -3,10 +3,53 @@
     <title>DevsBase</title>
     <link href="https://mashkarharis.github.io/feed.xml" rel="self" />
     <link href="https://mashkarharis.github.io" />
-    <updated>1970-01-01T05:30:00+05:30</updated>
+    <updated>2024-12-25T18:05:16+05:30</updated>
     <author>
         <name>M Ashkar Haris</name>
     </author>
     <id>https://mashkarharis.github.io</id>
 
+    <entry>
+        <title>Ternary Operation</title>
+        <author>
+            <name>M Ashkar Haris</name>
+        </author>
+        <link href="https://mashkarharis.github.io/ternary-operation.html"/>
+        <id>https://mashkarharis.github.io/ternary-operation.html</id>
+
+        <updated>2024-12-25T18:05:16+05:30</updated>
+            <summary>
+                <![CDATA[
+                    We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. In this article, we are going to discuss a quick and efficient operation known as Ternary Operation, used to handle conditional tasks in most programming languages. As mentioned,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. In this article, we are going to discuss a quick and efficient operation known as Ternary Operation, used to handle conditional tasks in most programming languages.</p>
+<h3 id="when-to-use-ternary-operators"><span class="me-2">When To Use Ternary Operators</span><a href="https://devsbase.online/posts/Ternary-Operation-1/#when-to-use-ternary-operators" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+<li>Ideal for simple conditional statements.</li>
+<li>Avoid using for complex conditions as it can reduce readability.</li>
+</ul>
+<h3 id="advantages-of-ternary-operators"><span class="me-2">Advantages of Ternary Operators</span><a href="https://devsbase.online/posts/Ternary-Operation-1/#advantages-of-ternary-operators" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ol>
+<li><strong>Conciseness</strong>: Reduces the amount of code.</li>
+<li><strong>Readability</strong>: Once familiar with structure, it can make the code easier to read.</li>
+</ol>
+<h3 id="structure"><span class="me-2">Structure</span><a href="https://devsbase.online/posts/Ternary-Operation-1/#structure" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>As mentioned, We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. Ternary operation is also one of the conditional operations introduced by many programming languages.</p>
+<p>First of all, Let’s look at the structure of this operator in java.</p>
+<table class="rouge-table">
+<tbody>
+<tr>
+<td class="rouge-gutter gl">
+<pre class="language-java"><code>variable var1 = (condition) ? (value If True) : (value If False)</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
 </feed>
