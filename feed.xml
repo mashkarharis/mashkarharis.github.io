@@ -3,7 +3,7 @@
     <title>DevsBase</title>
     <link href="https://mashkarharis.github.io/feed.xml" rel="self" />
     <link href="https://mashkarharis.github.io" />
-    <updated>2024-12-25T18:05:16+05:30</updated>
+    <updated>2024-12-25T18:18:57+05:30</updated>
     <author>
         <name>M Ashkar Haris</name>
     </author>
@@ -16,15 +16,19 @@
         </author>
         <link href="https://mashkarharis.github.io/ternary-operation.html"/>
         <id>https://mashkarharis.github.io/ternary-operation.html</id>
+        <media:content url="https://mashkarharis.github.io/media/posts/1/ana-municio-PbzntH58GLQ-unsplash.jpg" medium="image" />
+            <category term="Optimisation"/>
 
         <updated>2024-12-25T18:05:16+05:30</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://mashkarharis.github.io/media/posts/1/ana-municio-PbzntH58GLQ-unsplash.jpg" alt="" />
                     We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. In this article, we are going to discuss a quick and efficient operation known as Ternary Operation, used to handle conditional tasks in most programming languages. As mentioned,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://mashkarharis.github.io/media/posts/1/ana-municio-PbzntH58GLQ-unsplash.jpg" class="type:primaryImage" alt="" /></p>
                 <p>We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. In this article, we are going to discuss a quick and efficient operation known as Ternary Operation, used to handle conditional tasks in most programming languages.</p>
 <h3 id="when-to-use-ternary-operators"><span class="me-2">When To Use Ternary Operators</span><a href="https://devsbase.online/posts/Ternary-Operation-1/#when-to-use-ternary-operators" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <ul>
@@ -48,7 +52,73 @@
 </tr>
 </tbody>
 </table>
-<p> </p>
+<p>This operator has three main parts. Those are,</p>
+<p><code>Variable <br> Condition <br> Return Values </code></p>
+<h3 id="example-usages"><span class="me-2">Example Usages</span><a href="https://devsbase.online/posts/Ternary-Operation-1/#example-usages" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>When we run this operator, first it checks whether the given condition is true. If true, it stores Value If True in var1. If the given condition is false, it stores Value If False in var1. The java code below shows how this works.</p>
+<pre class="language-java"><code>class Ternary{
+    public static void main(String args[]) {
+        int score;
+        String result;
+        score=75;
+        result = (score&gt;=50) ? ("Passed") : ("Failed");
+        System.out.println(result);
+        score=30;
+        result = (score&gt;=50) ? ("Passed") : ("Failed");
+        System.out.println(result);
+    }
+}</code></pre>
+<p>Output :</p>
+<pre class="language-java"><code>Passed
+Failed</code></pre>
+<p>Now you have the question: “Why do we need this operation? We can use an “If” Statement instead of this”. Yes, you are correct, we can use an “if” condition instead of using ternary operation. But after reading the below example I’m sure that you will choose ternary over if.</p>
+<p>Grading Students Mark Using If, else, else if Condition :</p>
+<pre class="language-java"><code>class Ternary{
+    public static void main(String args[]) {
+        
+        int score;
+        String result;
+        score=67;
+
+        if(score&gt;=75){
+            result = "A";
+        }
+        else if(score&gt;=65){
+            result = "B";
+        }
+        else if(score&gt;=55){
+            result = "C";
+        }
+        else if(score&gt;=40){
+            result = "S";
+        }
+        else{
+            result = "F";
+        }
+        
+        System.out.println(result);
+    }
+}</code></pre>
+<p>It took 26 code lines to define the logic !!!</p>
+<p>Grading Students Mark Using Ternary Operation :</p>
+<pre class="language-java"><code>class Ternary{
+    public static void main(String args[]) {
+        int score;
+        String result;
+        score=30;
+        result = (score&gt;=75)? "A":
+                 (score&gt;=65)? "B":
+                 (score&gt;=55)? "C":
+                 (score&gt;=40)? "S":
+                 "W" ;
+        System.out.println(result);
+    }
+}</code></pre>
+<p>Now it took 13 code lines !!!</p>
+<p>Now you can see that codes can be shrunk using ternary operation.</p>
+<h3 id="conclusion"><span class="me-2">Conclusion</span><a href="https://devsbase.online/posts/Ternary-Operation-1/#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>As discussed The ternary operator is a valuable addition to a developer’s toolkit. It allows for cleaner and more efficient code, making it a preferred choice in many scenarios.</p>
+<p>I hope that this article was helpful to you. Thank you for reading.</p>
             ]]>
         </content>
     </entry>
