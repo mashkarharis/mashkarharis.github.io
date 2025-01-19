@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>DevsBase</title>
+    <title>Devs Base Online</title>
     <link href="https://mashkarharis.github.io/feed.xml" rel="self" />
     <link href="https://mashkarharis.github.io" />
-    <updated>2024-12-25T18:18:57+05:30</updated>
+    <updated>2025-01-19T10:41:52+05:30</updated>
     <author>
         <name>M Ashkar Haris</name>
     </author>
@@ -23,7 +23,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://mashkarharis.github.io/media/posts/1/ana-municio-PbzntH58GLQ-unsplash.jpg" alt="" />
-                    We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. In this article, we are going to discuss a quick and efficient operation known as Ternary Operation, used to handle conditional tasks in most programming languages. As mentioned,&hellip;
+                    We are commonly using if, else, else if, and switch case operations to handle our conditional tasks. In this article,&hellip;
                 ]]>
             </summary>
         <content type="html">
