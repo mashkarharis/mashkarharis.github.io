@@ -1,3 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://hariss-notes.mashkarharis.online/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Haris's Notes"
+theme = "hugo-book"
+params.BookTheme = "light"
+googlefonts = ["Droid Sans", "Fira Mono"]
+fontbody = 'Droid Sans'
+fontcode = 'Fira Mono'
