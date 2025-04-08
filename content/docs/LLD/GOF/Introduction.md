@@ -1,5 +1,5 @@
 [
-![](../fetched_images/Screenshot 2025-01-29 092059.png)]
+![](/images/Screenshot%202025-01-29%20092059.png)]
 In this series, we are going to discuss design patterns introduced in the book *“Design Patterns: Elements of Reusable Object\-Oriented Software”*, which has been used in the industry for a long time.
 ### About the Book
 The book “Design Patterns: Elements of Reusable Object\-Oriented Software” was published in 1994. It was authored by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides. They discussed 23 design patterns that can be used for solving commonly recurring problems in the industry. Since the authors are a group of four people, the book later got nicknamed "Gang of Four Design Patterns." In short, we call it GoF Design Patterns.

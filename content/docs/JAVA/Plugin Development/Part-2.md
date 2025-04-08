@@ -127,7 +127,7 @@ Now just run the app module. We can see that now it supports two circle types. S
 [
 ![](/images/1_nnl28EPVIsc7e6u41A7_OQ.webp)]
 [
-![](/images/1_7I2yBclMlhh-kxgAPbhJIA (1).webp)]
+![](/images/1_7I2yBclMlhh-kxgAPbhJIA1.webp)]
 ### 2. bluebordercircle
 I am not going to describe all the steps since they are the same as red\_circle. Code for the PluginCircle.java will be as below,
 package plugins;

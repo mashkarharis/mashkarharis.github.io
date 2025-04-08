@@ -1,4 +1,4 @@
-![](../fetched_images/1_8-euwLlm1x7WGIYim7d7IA.png)
+![](/images/1_8-euwLlm1x7WGIYim7d7IA.png)
 ## Introduction
 In this article, we are going to discuss about database normalization briefly. Database Normalization is a process, used to organize databases, introduced by Dr. Edgar F. Codd an IBM researcher. The concept was published in a paper titled “A Relational Model of Data for Large Shared Data Banks” in 1970.
 The main objective of database normalization is to organize relational databases into multiple smaller and related tables in such a way that,
@@ -36,9 +36,9 @@ Note that X -> Y, simply means using X we can determine Y
 ```
 ### First Normal Form \(1NF\)
 In the first normalization form, we ensure that the values in each column are atomic, which means they cannot be further divided. The main aim of this is to avoid multivalued cells. Let’s consider an example in the following table.
-![](../fetched_images/1*xhr4AatisvsSgD7jcMdFeQ.png)
+![](/images/1*xhr4AatisvsSgD7jcMdFeQ.png)
 Here we can see multiple lecturers teaching one subject. Hence, the table has multivalued cells. This contradicts the first normal form. So we have to create separate rows for each multi\-valued cell as shown below.
-![](../fetched_images/1*4UwCACRx1XA9OvGiOo5JTg.png)
+![](/images/1*4UwCACRx1XA9OvGiOo5JTg.png)
 Now we can see the table is in 1NF.
 ### Second Normal Form \(2NF\)
 In order to become 2NF, the following conditions need to be satisfied.
@@ -55,7 +55,7 @@ As shown above, the table is already in 1NF. In the above table, all other attri
 ```
 These types of dependencies are called Partial Dependencies. However, to achieve 2NF, we need to remove these partial dependencies. Because in 2NF, no non\-prime attribute should depend on part of the primary key. All non\-prime attributes should depend on the entire primary key.
 Following are the tables we get after removing these partial dependencies.
-![](../fetched_images/1*GliGlJPYy1ZcAbxncj_5Ug.png)
+![](/images/1*GliGlJPYy1ZcAbxncj_5Ug.png)
 Here we can see that no partial dependencies are remaining. Hence, now it satisfies 2NF.
 ### Third Normal Form \(3NF\)
 In order to become 3NF, the following conditions need to be satisfied.
@@ -78,11 +78,11 @@ We can remove these by placing the attributes in a new relation. Otherwise, ther
 We need to update Region each time we update City
 ```
 Here are the tables after removing transitive dependencies.
-![](../fetched_images/1*BpZacmsxWLSmAADDCJ1c9Q.png)
+![](/images/1*BpZacmsxWLSmAADDCJ1c9Q.png)
 Here we can see, that no transitive dependencies are remaining. So now it satisfies 3NF.
 ### Boyce–Codd Normal Form \(BCNF\)
 BCNF is the advanced version of 3NF. In order to become BCNF, the following conditions need to be satisfied.
 s discussed so far, the tables are in 3NF. Now, we can decompose the above tables as follows, in such a way that it satisfies the 4th condition,
-![](../fetched_images/1*qLh_SEPLl9tPtJYqlhzz-w.png)
+![](/images/1*qLh_SEPLl9tPtJYqlhzz-w.png)
 Likewise, we can continue applying more levels of database normalization, such as 4NF and 5NF. However, in this article, we discussed only up to BCNF. By adhering to the principles of normalization, databases can be designed and maintained more efficiently, leading to better overall data management and system performance.
 Thank You\!

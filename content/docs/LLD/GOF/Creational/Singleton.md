@@ -1,9 +1,9 @@
 [
-![](../fetched_images/Screenshot 2025-01-29 092951.png)]
+![](/images/Screenshot%202025-01-29%20092951.png)]
 In this blog post, we are going to discuss one of the popular design patterns that come under the Creational Design Pattern, the Singleton Design Pattern. The aim of this design pattern is to ensure that only one instance of its kind exists for a given class within the context of the entire application runtime. It also exposes a single point of access to it from anywhere in the application.
 So, in summary, this lets you access your object from anywhere in the application while encapsulating the attributes of this application within a single class, Guarantees that only one instance of this class is available at any point in time. The class diagram is as follows.
 [
-![](../fetched_images/Singleton_pattern_uml.png)]
+![](/images/Singleton_pattern_uml.png)]
 Now let's see how we can achieve this step by step. Let's first begin with basic step.
 |  1
  2

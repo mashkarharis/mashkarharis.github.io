@@ -1,6 +1,6 @@
  
 [
-![](../fetched_images/Screenshot 2025-02-04 080056.png)]Let's start with an example. Suppose we want to create an ImageReader class. This class is supposed to read multiple types of images, and support for image types can be added or removed later as the project expands. For example, let's say it currently supports PNG and JPEG formats. Refer to the following code:
+![](/images/Screenshot%202025-02-04%20080056.png)]Let's start with an example. Suppose we want to create an ImageReader class. This class is supposed to read multiple types of images, and support for image types can be added or removed later as the project expands. For example, let's say it currently supports PNG and JPEG formats. Refer to the following code:
 |  1
  2
  3
@@ -319,5 +319,5 @@ Here are the key use cases of the Factory Method design pattern:
 
 Class Diagram
 [
-![](../fetched_images/Untitled Diagram.drawio (1).png)]
+![](/images/Untitled%20Diagram.drawio%20(1).png)]
 Happy Coding 🙌

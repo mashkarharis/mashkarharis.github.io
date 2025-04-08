@@ -1,5 +1,5 @@
 [
-![](../fetched_images/Screenshot 2025-03-10 123810.png)]
+![](/images/Screenshot%202025-03-10%20123810.png)]
 Let's say we have a *PaymentProcessorService *in our application. This service needs to send notifications to users and for this, the class requires the *NotificationManagementService* type instance to be injected.
 The *NotificationManagementService *has three implementations: *SMSNotificationManagementService*, *PushNotificationManagementService*, and *EmailNotificationManagementService*. Based on the use case, when we use *PaymentProcessorService*, we need to inject SMS, Push, and/or Email notification management services accordingly. 
 But will the following code work?

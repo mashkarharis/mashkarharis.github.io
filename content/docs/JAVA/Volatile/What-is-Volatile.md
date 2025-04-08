@@ -1,5 +1,5 @@
 [
-![](../fetched_images/Screenshot 2025-01-29 111128.png)]
+![](/images/Screenshot%202025-01-29%20111128.png)]
 Let's assume we have a *TicketBook *class. Assume we maintain the number of remaining tickets in a shared counter variable named *availableTickets*. See the code below:
 ```
 class TicketBook {
@@ -11,7 +11,7 @@ class TicketBook {
 Now let's assume the class is a singleton class. So only one instance of the *TicketBook *object exists during the whole runtime and all users using that instance.
 Assume 2 users came to use this *TicketBook *object in two different threads on two different CPUs. By default behavior of CPU caching, each thread may have its own local copy of the *availableTickets *variable, as shown below:
 [
-![](../fetched_images/AVvXsEhUTOi4ZWo0ljfXnvjnuwBbweCBIn7krEUslTmnIbfGrPwL2FgCQw-LzFUqbfG0Vv24JcbzpoEU4OsRZG4avmqad04uEWX6wx5cVM5K5l-FwlcpDNafTjJsEFFc9ZNh2Kr27dX4b7_8l3nIg8JZ2IXK5b0cxhN1FFdK70lxdGJDSQXAHCTcIqi6AowyjmrO)]
+![](/images/AVvXsEhUTOi4ZWo0ljfXnvjnuwBbweCBIn7krEUslTmnIbfGrPwL2FgCQw-LzFUqbfG0Vv24JcbzpoEU4OsRZG4avmqad04uEWX6wx5cVM5K5l-FwlcpDNafTjJsEFFc9ZNh2Kr27dX4b7_8l3nIg8JZ2IXK5b0cxhN1FFdK70lxdGJDSQXAHCTcIqi6AowyjmrO)]
 Main Memory:
 ```
 

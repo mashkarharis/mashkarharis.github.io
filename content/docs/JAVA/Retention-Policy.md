@@ -1,5 +1,5 @@
 [
-![](../fetched_images/java flow.drawio.png)]
+![](/images/java%20flow.drawio.png)]
 ### RetentionPolicy.SOURCE
 Annotations are removed after compilation.
 ✅ Available only during compilation.

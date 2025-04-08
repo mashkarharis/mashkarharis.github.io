@@ -1,5 +1,5 @@
 [
-![](../fetched_images/Screenshot 2025-02-11 084203.png)]
+![](/images/Screenshot%202025-02-11%20084203.png)]
 In this article we are going to see what are solid principles and why we need those in day to day programming.
 The SOLID is short form for,
 Set of best practices which is defined to avoid code smells, duplications, refactoring, and other issues we may face while maintaining and extending as project evolves and grows.

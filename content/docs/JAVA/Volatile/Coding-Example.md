@@ -1,5 +1,5 @@
 [
-![](../fetched_images/Screenshot 2025-01-29 123137.png)]
+![](/images/Screenshot%202025-01-29%20123137.png)]
 This is a continuation of article [Link]
 ```
 Quick Recap: 

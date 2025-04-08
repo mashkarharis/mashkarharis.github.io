@@ -1,5 +1,5 @@
 [
-![](../fetched_images/0_AmLgBqUJfksEgPbv.webp)]
+![](/images/0_AmLgBqUJfksEgPbv.webp)]
 In this article, we are going to discuss a quick and efficient operation used in most programming languages. This operation is known as a Ternary Operation.
 We are commonly using if, else, else if, switch case operation to handle our conditional tasks. Ternary operation is also one of the conditional operations introduced by programming languages.
 First of all, I would like to introduce the structure of this operator in java.

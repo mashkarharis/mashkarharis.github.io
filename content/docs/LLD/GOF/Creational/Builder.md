@@ -1,5 +1,5 @@
  [
-![](../fetched_images/Screenshot 2025-02-13 080533.png)]
+![](/images/Screenshot%202025-02-13%20080533.png)]
 Let's say we want an HttpRequest object, which requires many parameters and configurations. Also, based on what the user builds \(GetRequest / PostRequest\), the parameters also differ. So, it is not a good decision to let the user build this object themselves \(we can make constructors private to avoid this\). Instead, we can guide the user through a structured process using a class \(Builder Class\). The pattern we are discussing is called the Builder Design Pattern, a creational design pattern that helps users build complex objects using a builder class.
 Let's try to understand the concept through a coding example where we build Get and Post Requests.
 |  1

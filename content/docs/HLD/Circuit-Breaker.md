@@ -1,12 +1,12 @@
 [
-![](../fetched_images/1_WkUIE-a7thjUl2Yh9VVkkg.webp)]
+![](/images/1_WkUIE-a7thjUl2Yh9VVkkg.webp)]
 In this article, we are going to briefly discuss the circuit breaker design pattern in microservices. Let’s start with a simple example.
 [
-![](../fetched_images/1_zzkyJE6YRAqN-1lNqVUnWw.webp)]
+![](/images/1_zzkyJE6YRAqN-1lNqVUnWw.webp)]
 Let’s say we have a large\-scale system with several microservices. Order\-Service and Payment\-Service are two microservices among them. After the user clicks the “Complete Order” button, a request will be sent to the backend. In the backend, requests will go through several other services such as User\-Service, Item\-Service, etc. Finally, the request will go from Order\-Service to Payment\-Service. Then Payment\-Service will process the card details, get the payments done and the payment status will be sent to Order\-Service back.
 ### Problem
 [
-![](../fetched_images/1_O5Wkt4dCszr1BCJSg1-3Wg.webp)]
+![](/images/1_O5Wkt4dCszr1BCJSg1-3Wg.webp)]
 However, let’s assume that Payment Service fails to process requests for a while due to some reason such as network issues, unavailability of the service, service failure, etc. Meanwhile, the system receives 10,000 purchasing requests. What happens is, that Order\-Service sends each request to Payment\-Service using available threads and waits for a response. However, after a few seconds, these requests will be timed out. This will be a huge drawback due to ineffective network, thread, memory, and database allocation for each request. Most importantly this drawback will cascade to all other services, that are involved in this order\-processing task.
 ### Solution
 This issue can be easily solved if we could identify, that there is some ongoing issue with Payment\-Service. Hence, Order\-Service can avoid sending new requests to Payment\-Service. Rather it can immediately send a suitable fail response, for incoming new payment processing requests.
@@ -17,7 +17,7 @@ Now let’s see how we can identify whether Payment\-Service is working or not. 
 
 The diagram below explains these three states.
 [
-![](../fetched_images/1_SNSpWicSI0KXmRDIKKwTig.webp)]
+![](/images/1_SNSpWicSI0KXmRDIKKwTig.webp)]
 ### Implementation
 Below is a sample Java code snippet for Circuit Breaker using [resilience4j] with discussed X, T, N, and n parameters.
 // CODE IN ORDER\-SERVICE

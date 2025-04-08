@@ -1,5 +1,5 @@
  [
-![](../fetched_images/Screenshot 2025-02-12 110747.png)]
+![](/images/Screenshot%202025-02-12%20110747.png)]
 The Factory Method is a creational design pattern that provides an interface for creating single objects. The Abstract Factory is also a creational design pattern, but it focuses on creating factories that produce families of related objects. In other words, an Abstract Factory is a factory of factories \(a super factory\).
 Let's look at an example.
 In this example, we look into UI building logic. Let's say we want to create Buttons and Checkboxes for Windows and Mac.
@@ -156,5 +156,5 @@ Rendering Mac Button
 ***Class Diagram******
 ***
 [
-![](../fetched_images/abstract_factory.drawio.png)]
+![](/images/abstract_factory.drawio.png)]
 Happy Coding 🙌

@@ -1,5 +1,5 @@
 [
-![](../fetched_images/Screenshot 2025-03-10 110544.png)]
+![](/images/Screenshot%202025-03-10%20110544.png)]
 Let's begin with an example.
 Assume we have a system where some methods are only accessible based on some user type \(ADMIN, USER, GUEST\) and access mode \(API, PORTAL\).
 Basic code will look like this.

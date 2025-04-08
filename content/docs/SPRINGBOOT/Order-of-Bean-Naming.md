@@ -1,5 +1,5 @@
 [
-![](../fetched_images/Screenshot 2025-03-11 113739.png)]
+![](/images/Screenshot%202025-03-11%20113739.png)]
  
 In this article, we will explore how Spring Boot resolves ambiguity and determines bean names in the application context. Spring Boot follows these rules in order to determine the bean names.
 #### 1. Explicit Name in @Bean Annotation

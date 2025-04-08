@@ -1,6 +1,6 @@
  
 [
-![](../fetched_images/Screenshot 2025-02-20 165133.png)]In our application there can be Objects, which takes lot of resources and effort to initialize and build up to some extent. These types of objects creation are costly that requires a lot of time and resources. But if we already created a such Object, if we want more Objects like, what we do ? create from scratch again or using same Object to just clone it. It is the design decision, which involves Prototype Design Pattern. Prototype Design Pattern is mechanism to copy the original object to a new object and modify it according to our needs.
+![](/images/Screenshot%202025-02-20%20165133.png)]In our application there can be Objects, which takes lot of resources and effort to initialize and build up to some extent. These types of objects creation are costly that requires a lot of time and resources. But if we already created a such Object, if we want more Objects like, what we do ? create from scratch again or using same Object to just clone it. It is the design decision, which involves Prototype Design Pattern. Prototype Design Pattern is mechanism to copy the original object to a new object and modify it according to our needs.
 Let's start with an example.
 Let's say we get a request from user, where user uploads a image file, and our system is suppose to send PNG and JPEG version of that image file. Let's build flow for two approaches we have,
 First Option
@@ -10,7 +10,7 @@ First Option
 * Convert each scanned objects to preferred target file type
 
 [
-![](../fetched_images/image1.png)]
+![](/images/image1.png)]
 **OR**
 Second Option
 * Get file from user
@@ -20,7 +20,7 @@ Second Option
 * Convert and send results
 
 [
-![](../fetched_images/image1.png)]
+![](/images/image1.png)]
 As we can see second approach is more sound and efficient. However it need some mechanism to clone object. This is where we can use protype design pattern.
 As we concluded The better approach would be to clone the existing object into a new object and then do the data manipulation to reduce number of times costly tasks invocation and save more memory.
 When is come to prototyping there is two ways we can do
@@ -28,7 +28,7 @@ When is come to prototyping there is two ways we can do
 2. Deep copy : Creates a new instance of the object and its nested objects. Make sure that changes in the original object, including nested objects, do not affect the cloned object and its nested objects.
 
 [
-![](../fetched_images/image1.png)]
+![](/images/image1.png)]
 ### Simple Coding Example \(JAVA\)
 #### 
 
