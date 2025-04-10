@@ -1,160 +1,149 @@
- [
-![](/images/Screenshot%202025-02-12%20110747.png)]
+# GOF Design Patterns (4) : Abstract Factory (V3)
+
+![](/images/Screenshot%202025-02-12%20110747.png)
+
+## Introduction
+
 The Factory Method is a creational design pattern that provides an interface for creating single objects. The Abstract Factory is also a creational design pattern, but it focuses on creating factories that produce families of related objects. In other words, an Abstract Factory is a factory of factories \(a super factory\).
+
+## Problem
+
 Let's look at an example.
+
 In this example, we look into UI building logic. Let's say we want to create Buttons and Checkboxes for Windows and Mac.
 So, the objects are as follows:
-|  1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26 |interfaceButton\{void renderButton\(\);\}interfaceCheckbox\{void renderCheckbox\(\);\}classWindowsButtonimplements Button \{publicvoidrenderButton\(\)\{
-        System.out.println\("Rendering Windows Button"\);\}\}classMacButtonimplements Button \{publicvoidrenderButton\(\)\{
-        System.out.println\("Rendering Mac Button"\);\}\}classWindowsCheckboximplements Checkbox \{publicvoidrenderCheckbox\(\)\{
-        System.out.println\("Rendering Windows Checkbox"\);\}\}classMacCheckboximplements Checkbox \{publicvoidrenderCheckbox\(\)\{
-        System.out.println\("Rendering Mac Checkbox"\);\}\} |
-|---|---|
-Now, let's write code to initialize these elements and render a frame for both Windows and Mac.
-|  1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15 |classUI\{publicvoidwindowsFrame\(\)\{
-        Button winButton =new WindowsButton\(\);
-        Checkbox winCheckBox =new WindowsCheckbox\(\);
-        winButton.renderButton\(\);
-        winCheckBox.renderCheckbox\(\);\}publicvoidmacFrame\(\)\{
-        Button macButton =new MacButton\(\);
-        Checkbox macCheckBox =new MacCheckbox\(\);
-        macButton.renderButton\(\);
-        macCheckBox.renderCheckbox\(\);\}\} |
-|---|---|
-If we observe the code, we are tightly coupling the UI with the OS \(Windows/Mac\). If we want to extend Linux support, we have to add a completely new, repetitive method named linuxFrame, which also violates SOLID principles.
-What if we use a higher\-level factory that generates Windows/Mac/Linux \(or whatever we support\), handles element generation logic, and injects it into the UI at runtime based on the detected OS?
-This is where the Abstract Factory comes into play. Let's implement it in this example.
-|  1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24 |interfaceUIFactory\{
-    Button createButton\(\);
-    Checkbox createCheckbox\(\);\}classWindowsUIFactoryimplements UIFactory \{public Button createButton\(\)\{returnnewWindowsButton\(\);\}public Checkbox createCheckbox\(\)\{returnnewWindowsCheckbox\(\);\}\}classMacUIFactoryimplements UIFactory \{public Button createButton\(\)\{returnnewMacButton\(\);\}public Checkbox createCheckbox\(\)\{returnnewMacCheckbox\(\);\}\} |
-|---|---|
-As we can see, we now have higher\-level UI factories responsible for handling OS\-specific elements.
-Now, we can decouple the UI factory from OS\-based logic as follows:
-|  1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24 |classUI\{
-    UIFactory uiFactory;publicUI\(UIFactory uiFactory\)\{this.uiFactory= uiFactory;\}publicvoidgenerateFrame\(\)\{
-        Checkbox checkBoxForAccept = uiFactory.createCheckbox\(\);
-        Button buttonForSubmit = uiFactory.createButton\(\);
-        checkBoxForAccept.renderCheckbox\(\);
-        buttonForSubmit.renderButton\(\);\}\}classAbstractFactoryExample\{publicstaticvoidmain\(String\[\] args\)\{
-        UI windowsUI =new UI\(new WindowsUIFactory\(\)\);
-        windowsUI.generateFrame\(\);
+```java
+interface Button { void renderButton(); }
+interface Checkbox { void renderCheckbox(); }
 
-        UI macUI =new UI\(new MacUIFactory\(\)\);
-        macUI.generateFrame\(\);\}\} |
-|---|---|
+class WindowsButton implements Button {
+    public void renderButton() {
+        System.out.println("Rendering Windows Button");
+    }
+}
+
+class MacButton implements Button {
+    public void renderButton() {
+        System.out.println("Rendering Mac Button");
+    }
+}
+
+class WindowsCheckbox implements Checkbox {
+    public void renderCheckbox() {
+        System.out.println("Rendering Windows Checkbox");
+    }
+}
+
+class MacCheckbox implements Checkbox {
+    public void renderCheckbox() {
+        System.out.println("Rendering Mac Checkbox");
+    }
+}
+```
+
+Now, let's write code to initialize these elements and render a frame for both Windows and Mac.
+```java
+class UI {
+    public void windowsFrame() {
+        Button winButton = new WindowsButton();
+        Checkbox winCheckBox = new WindowsCheckbox();
+        winButton.renderButton();
+        winCheckBox.renderCheckbox();
+    }
+
+    public void macFrame() {
+        Button macButton = new MacButton();
+        Checkbox macCheckBox = new MacCheckbox();
+        macButton.renderButton();
+        macCheckBox.renderCheckbox();
+    }
+}
+```
+If we observe the code, we are tightly coupling the UI with the OS \(Windows/Mac\). If we want to extend Linux support, we have to add a completely new, repetitive method named linuxFrame, which also violates SOLID principles.
+
+## Fix It
+
+What if we use a higher\-level factory that generates Windows/Mac/Linux \(or whatever we support\), handles element generation logic, and injects it into the UI at runtime based on the detected OS?
+
+This is where the Abstract Factory comes into play. Let's implement it in this example.
+```java
+interface UIFactory {
+    Button createButton();
+    Checkbox createCheckbox();
+}
+
+class WindowsUIFactory implements UIFactory {
+    public Button createButton() {
+        return new WindowsButton();
+    }
+
+    public Checkbox createCheckbox() {
+        return new WindowsCheckbox();
+    }
+}
+
+class MacUIFactory implements UIFactory {
+    public Button createButton() {
+        return new MacButton();
+    }
+
+    public Checkbox createCheckbox() {
+        return new MacCheckbox();
+    }
+}
+```
+
+As we can see, we now have higher\-level UI factories responsible for handling OS\-specific elements.
+
+Now, we can decouple the UI factory from OS\-based logic as follows:
+
+```java
+class UI {
+    UIFactory uiFactory;
+
+    public UI(UIFactory uiFactory) {
+        this.uiFactory = uiFactory;
+    }
+
+    public void generateFrame() {
+        Checkbox checkBoxForAccept = uiFactory.createCheckbox();
+        Button buttonForSubmit = uiFactory.createButton();
+        checkBoxForAccept.renderCheckbox();
+        buttonForSubmit.renderButton();
+    }
+}
+
+class AbstractFactoryExample {
+    public static void main(String[] args) {
+        UI windowsUI = new UI(new WindowsUIFactory());
+        windowsUI.generateFrame();
+
+        UI macUI = new UI(new MacUIFactory());
+        macUI.generateFrame();
+    }
+}
+```
+
 Output:
-| 1
-2
-3
-4 |Rendering Windows Checkbox  
+```text
+Rendering Windows Checkbox  
 Rendering Windows Button  
 Rendering Mac Checkbox  
-Rendering Mac Button  
- |
-|---|---|
-***
-***
-***When to use the Abstract Factory?***
-***
-***
-* When we want to generate families of grouped elements \(Windows element family, Mac element family\).
-* To decouple the generation of families of elements from the implementation logic.
+Rendering Mac Button 
+```
 
-***
-***
-***Difference between Factory Method and Abstract Factory***
-***
-***
-* Factory Method : A method that returns an instance of a single product.
-* Abstract Factory : A factory that returns multiple related products.
+## When to use ?
 
-***Class Diagram******
-***
-[
-![](/images/abstract_factory.drawio.png)]
+- When we want to generate families of grouped elements \(Windows element family, Mac element family\).
+- To decouple the generation of families of elements from the implementation logic.
+
+## Compare With Factory-Method
+
+- Factory Method : A method that returns an instance of a single product.
+- Abstract Factory : A factory that returns multiple related products.
+
+## Class Diagram
+
+![](/images/abstract_factory.drawio.png)
+
 Happy Coding 🙌
