@@ -5,7 +5,7 @@
 ## RetentionPolicy.SOURCE
 
 Annotations are removed after compilation.
-```
+```text
 ✅ Available only during compilation.
 ❌ Not present in the .class file.
 ❌ Not available at runtime.
@@ -15,7 +15,7 @@ Use Case: Lombok \(@Getter, @Setter\)
 ## RetentionPolicy.CLASS
 
 Annotations are kept in the .class file but removed at runtime.
-```
+```text
 ✅ Available during compilation.
 ✅ Exists in the compiled .class file.
 ❌ Not available at runtime.
@@ -25,7 +25,7 @@ Use Case: Useful when doing byte code\-level post\-processing
 ## RetentionPolicy.RUNTIME
 
 Annotations are available even after compilation and class loading.
-```
+```text
 ✅ Exists in the .class file.
 ✅ Available at runtime via reflection.
 ```
