@@ -6,3 +6,8 @@ params.BookTheme = "light"
 googlefonts = ["Droid Sans", "Fira Mono"]
 fontbody = 'Droid Sans'
 fontcode = 'Fira Mono'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
