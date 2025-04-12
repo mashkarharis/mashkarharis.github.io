@@ -1,7 +1,7 @@
 ---
 weight: 200
 ---
-# GOF Design Patterns (3) : Factory Method (V3) 
+# GOF Design Patterns : Factory Method
 
 ![](/images/Screenshot%202025-02-04%20080056.png)
 

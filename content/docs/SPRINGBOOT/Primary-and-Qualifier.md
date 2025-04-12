@@ -1,4 +1,4 @@
-# Spring Boot : @Primary and @Qualifier (V3)
+# Spring Boot : @Primary and @Qualifier
 
 ![](/images/Screenshot%202025-03-10%20123810.png)
 

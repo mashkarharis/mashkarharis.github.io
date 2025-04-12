@@ -1,4 +1,4 @@
-# Spring Boot : Order of Bean Naming (V3)
+# Spring Boot : Order of Bean Naming
 ![](/images/Screenshot%202025-03-11%20113739.png)
 
 In this article, we will explore how Spring Boot resolves ambiguity and determines bean names in the application context. Spring Boot follows these rules in order to determine the bean names.

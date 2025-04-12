@@ -1,4 +1,4 @@
-# Java : Ternary Operation (V3)
+# Java : Ternary Operation
 
 ![](/images/0_AmLgBqUJfksEgPbv.webp)
 

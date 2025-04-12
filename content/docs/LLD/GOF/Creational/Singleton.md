@@ -1,7 +1,7 @@
 ---
 weight: 100
 ---
-# GOF Design Patterns (2) : Singleton Design Pattern (V3)
+# GOF Design Patterns : Singleton Design Pattern
 
 ![](/images/Screenshot%202025-01-29%20092951.png)
 

@@ -1,7 +1,7 @@
 ---
 weight: 100
 ---
-# How to implement plugin support for a Java Application : Part 1 (V3)
+# How to implement plugin support for a Java Application : Part 1
 
 ![](/images/0_Lw-e0GtUP8UtBCoq.webp)
 

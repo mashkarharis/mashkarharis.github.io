@@ -1,4 +1,4 @@
-# Spring Boot : Aspect Oriented Programming (AOP) (V3)
+# Spring Boot : Aspect Oriented Programming (AOP)
 
 ![](/images/Screenshot%202025-03-10%20110544.png)
 

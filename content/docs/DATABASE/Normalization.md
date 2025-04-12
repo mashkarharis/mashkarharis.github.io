@@ -1,4 +1,4 @@
-# Database : Normalization in Brief 📦 (V3)
+# Database : Normalization in Brief 📦
 
 ![](/images/1_8-euwLlm1x7WGIYim7d7IA1.png)
 

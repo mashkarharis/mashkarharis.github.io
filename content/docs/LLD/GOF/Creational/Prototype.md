@@ -1,7 +1,7 @@
 ---
 weight: 500
 ---
-# GOF Design Patterns (6) : Prototype (V3)
+# GOF Design Patterns : Prototype
 
 ![](/images/Screenshot%202025-02-20%20165133.png)
 

@@ -1,4 +1,4 @@
-# Java :  Retention Policy Options (V3)
+# Java :  Retention Policy Options
 
 ![](/images/java%20flow.drawio.png)
 

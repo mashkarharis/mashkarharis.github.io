@@ -1,7 +1,7 @@
 ---
 weight: 200
 ---
-# Java : Volatile Coding Example (V3)
+# Java : Volatile Coding Example
 
 ![](/images/Screenshot%202025-01-29%20123137.png)
 

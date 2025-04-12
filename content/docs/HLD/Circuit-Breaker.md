@@ -1,4 +1,4 @@
-# Circuit Breaker ⚡ Pattern in Microservices (V3)
+# Circuit Breaker ⚡ Pattern in Microservices
 
 ![](/images/1_WkUIE-a7thjUl2Yh9VVkkg1.webp)
 
