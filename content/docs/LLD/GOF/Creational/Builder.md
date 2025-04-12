@@ -1,3 +1,6 @@
+---
+weight: 400
+---
 # GOF Design Patterns (5) : Builder (V3)
 
 ![](/images/Screenshot%202025-02-13%20080533.png)

@@ -1,3 +1,6 @@
+---
+weight: 100
+---
 # Java : What is Volatile ? (V3)
 
 ![](/images/Screenshot%202025-01-29%20111128.png)

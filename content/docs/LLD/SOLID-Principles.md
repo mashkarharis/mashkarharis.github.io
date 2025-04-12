@@ -1,3 +1,6 @@
+---
+weight: 100
+---
 # SOLID Principles (V3)
 
 ![](/images/Screenshot%202025-02-11%20084203.png)

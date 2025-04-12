@@ -1,3 +1,6 @@
+---
+weight: 300
+---
 # GOF Design Patterns (4) : Abstract Factory (V3)
 
 ![](/images/Screenshot%202025-02-12%20110747.png)

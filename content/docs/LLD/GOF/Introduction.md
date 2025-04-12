@@ -1,3 +1,6 @@
+---
+weight: 100
+---
 # GOF Design Patterns (1) : Introduction (V3)
 
 ![](/images/Screenshot%202025-01-29%20092059.png)
