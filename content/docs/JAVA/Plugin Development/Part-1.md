@@ -243,9 +243,6 @@ Since No plugins are added, It supports only basic type of circle. Here is the c
 
 ![](/images/1_aKXk2aDOZjP-IkGmLujtMQ.webp)
 
-It’s all for part 1. Rest will be continued in **Part 2**. In that, 
-
-I hope to add two more circles as the plugins.
-Part 2: [Link]
+It’s all for part 1. Rest will be continued in [Part 2](/docs/java/plugin-development/part-2/). In that, I hope to add two more circles as the plugins.
 
 Happy Coding 🙌

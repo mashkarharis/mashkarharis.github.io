@@ -60,7 +60,7 @@ Essentially, it guarantees visibility that all threads see the same memory locat
 Volatile should be used when we have a shared variable that is referred to and updated by multiple threads. It ensures that all threads will see the updated value of the volatile variable after one thread changes it.
 If we do not use a volatile variable, the compiler can reorder the code and may write to the cache value of the variable instead of reading from the main memory. Hence, it also prevents the compiler from reordering code.
 
-```
+```text
 Note: When a variable is not shared between multiple threads, we do not need to use the volatile keyword with that variable. Using volatile unnecessarily introduces performance issues by avoiding caching at the thread level.
 ```
 
@@ -76,6 +76,6 @@ Note: When a variable is not shared between multiple threads, we do not need to 
 - ***Synchronized***: It restricts the execution of a code block until a thread acquires the necessary lock.
 - ***Volatile***: This deals with memory caching and ensures visibility of changes across threads.
 
-Next, let's understand the volatile keyword with a coding example :\
-Java : Volatile Coding Example\
+Next, let's understand the volatile keyword with a coding example : [Java : Volatile Coding Example](/docs/java/volatile/coding-example/)
+
 Happy Coding 🙌

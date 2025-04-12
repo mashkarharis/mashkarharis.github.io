@@ -8,7 +8,7 @@ In this series, we are going to discuss design patterns introduced in the book *
 
 The book ***Design Patterns: Elements of Reusable Object\-Oriented Software*** was published in 1994. It was authored by *Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides*. They discussed *23 design patterns* that can be used for solving commonly recurring problems in the industry. Since the authors are a group of four people, the book later got nicknamed ***Gang of Four Design Patterns***. In short, we call it GoF Design Patterns.
 
-Here is the link to the book: [Link]
+Here is the link to the book: [Link](https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8)
 
 ## What Are Design Patterns?
 
@@ -31,11 +31,11 @@ Now, let’s briefly explore the design patterns that fall into these categories
 
 ### Creational
 
-* ***Singleton***: Restricts multiple initializations of a class and ensures that only one instance of the class exists during the entire runtime.
-* ***Factory***: Provides an interface for creating objects in a superclass while allowing subclasses to alter the type of objects created.
-* ***Abstract*** Factory: Similar to the Factory Pattern, it adds another layer of abstraction. It works around a super\-factory that creates other factories.
-* ***Builder***: Constructs complex objects step by step.
-* ***Prototype***: Enables the creation of new objects by copying an existing object and modifying it as needed.
+* [***Singleton***](/docs/lld/gof/creational/singleton/): Restricts multiple initializations of a class and ensures that only one instance of the class exists during the entire runtime.
+* [***Factory***](/docs/lld/gof/creational/factory-method/): Provides an interface for creating objects in a superclass while allowing subclasses to alter the type of objects created.
+* [***Abstract Factory***](/docs/lld/gof/creational/abstract-factory/): Similar to the Factory Pattern, it adds another layer of abstraction. It works around a super\-factory that creates other factories.
+* [***Builder***](/docs/lld/gof/creational/builder/): Constructs complex objects step by step.
+* [***Prototype***](/docs/lld/gof/creational/prototype/): Enables the creation of new objects by copying an existing object and modifying it as needed.
 
 ### Structural
 

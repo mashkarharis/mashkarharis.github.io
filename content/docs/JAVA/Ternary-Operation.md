@@ -17,7 +17,7 @@ variable var1 = (condition) ? (value If True):(value If False)
 ```
 
 This operator has three main parts. Those are,
-```
+```text
 Variable
 Condition
 Return Values
@@ -41,7 +41,7 @@ class Ternary{
 }
 ```
 Output:
-```
+```text
 Passed
 Failed
 ```
@@ -99,7 +99,7 @@ Now it took 12 code lines \!\!\!\
 Now you can see that codes can be shrunk using ternary operation.
 ## Conclusion
 Line by line we came to the end of the article. In this we discussed,
-```
+```text
 Introduction to Ternary
 Structure of Ternary
 Main Parts Ternary
@@ -108,5 +108,6 @@ Comparing If and Ternary.
 ```
 
 I hope that this article was helpful to you.\
-Thank you for reading.\
+Thank you for reading.
+
 Happy Coding 🙌

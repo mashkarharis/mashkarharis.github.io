@@ -4,7 +4,7 @@
 
 ## Introduction
 
-As I mentioned in the [previous article], in this article I will implement two plugins to draw two different types of circles. Here are the two circle types, that will be added,
+As I mentioned in the [Part 1](/docs/java/plugin-development/part-1/), in this article I will implement two plugins to draw two different types of circles. Here are the two circle types, that will be added,
 
 1. **redcircle** : This is a circle which has a red colored border. And this circle is filled with red color.
 

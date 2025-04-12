@@ -23,7 +23,7 @@ Here, we discuss the following levels of normalization.
 
 Let’s discuss each one by one. Here I’ll try to explain using practical examples without going deep into theoretical aspects.
 
-```
+```text
 Note that X -> Y, simply means using X we can determine Y
 ```
 
@@ -49,7 +49,7 @@ In order to become 2NF, the following conditions need to be satisfied.
 
 As shown above, the table is already in 1NF. In the above table, all other attributes depend on *\{ Student\_Id, Subject\_Id, Professor\_Id \}*, which is the composite primary key. But the followings depend on only a part of the composite primary key,
 
-```
+```text
 {Student_id} -> {Student Name, City, Region}
 {Subject_id} -> {Subject, Credits}
 {Professor_id} -> {Professor Name}
@@ -74,13 +74,13 @@ In order to become 3NF, the following conditions need to be satisfied.
 
 Transitive Dependency occurs when a non\-prime attribute depends on another non\-prime attribute. The normalization from 2NF to 3NF involves the removal of Transitive Dependencies. Let’s consider our example. In our example, we have the following transitive dependencies.
 
-```
+```text
 {City} -> {Region}
 ```
 
 We can remove these by placing the attributes in a new relation. Otherwise, there will be update anomalies like,
 
-```
+```text
 We need to update Region each time we update City
 ```
 

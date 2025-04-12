@@ -2,7 +2,7 @@
 
 ![](/images/Screenshot%202025-01-29%20123137.png)
 
-This is a continuation of article [Link]
+This is a continuation of article [Java : What is Volatile ?](/docs/java/volatile/what-is-volatile/)
 
 **Quick Recap** 
 
@@ -12,7 +12,7 @@ This is a continuation of article [Link]
 
 With that, in this post we are focusing on simulate a running example, which shows us why we need to add volatile keyword on shared variables among multiple threads in java. 
 
-Let see two codes with volatile and without volatile.Code Source : [Link]
+Let see two codes with volatile and without volatile.
 
 ## With Volatile
 
@@ -44,7 +44,7 @@ class TestVolatile extends Thread {
 ```
 
 Output
-```
+```text
 after sleeping in main
 Thread terminated.4223253655
 keepRunning set to false
@@ -79,7 +79,7 @@ class TestVolatile extends Thread {
 ```
 
 Output
-```
+```text
 after sleeping in main
 ```
 
