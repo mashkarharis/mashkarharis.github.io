@@ -8,8 +8,9 @@
 # V-4 : Artcle Linking Done + EMOJI [DONE]
 # V-5 : Author + Meta + Ordering [DONE]
 # V-7 : Add HOME PAGE [DONE]
-# Remove V
-# Publish
+# Remove V  [DONE]
+# Publish [DONE]
+# Google Alaytics
 # Prove Read
 # Correct and Finalize
 
