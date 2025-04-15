@@ -82,7 +82,7 @@ weight: 100
 # Haris's Notes 📜
 
 ---
-
+<!-- 
 <div class="profile-card">
   <div class="text">
     <p>By</p>
@@ -100,7 +100,7 @@ weight: 100
 ">
 </div>
 
----
+--- -->
 
 Welcome to **Haris's Notes** — a technical blog where I share solutions, patterns, and practical knowledge I actively gather through my work as a Computer Science Engineer.
 
