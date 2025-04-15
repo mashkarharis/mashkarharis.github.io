@@ -10,8 +10,8 @@
 # V-7 : Add HOME PAGE [DONE]
 # Remove V  [DONE]
 # Publish [DONE]
-# Google Alaytics
-# Prove Read
+# Google Alaytics [DONE]
+# Prove Read [2/18]
 # Correct and Finalize
 
 [Link](https://resilience4j.readme.io/docs/examples)

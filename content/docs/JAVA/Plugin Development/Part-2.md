@@ -39,12 +39,12 @@ As the next step I defined *circle_drawer* as the parent of this *red_circle* mo
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.drawer.circle</groupId>
-		<artifactId>circle\_drawer</artifactId>
+		<artifactId>circle_drawer</artifactId>
 		<version>0.0.1</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
-	<groupId>com.drawer.circle.plugins.red\_circle</groupId>
-	<artifactId>red\_circle</artifactId>
+	<groupId>com.drawer.circle.plugins.red_circle</groupId>
+	<artifactId>red_circle</artifactId>
 </project>
 ```
 
@@ -60,12 +60,12 @@ As the next step I wanted to add the *red\_circle* module into the *circle\_draw
          https://maven.apache.org/xsd/maven\-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.drawer.circle</groupId>
-	<artifactId>circle\_drawer</artifactId>
+	<artifactId>circle_drawer</artifactId>
 	<version>0.0.1</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>app</module>
-		<module>plugins/red\_circle</module>
+		<module>plugins/red_circle</module>
 	</modules>
 </project>
 ```
@@ -102,12 +102,12 @@ Then final *pom.xml* of *red\_circle* was as below,
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.drawer.circle</groupId>
-		<artifactId>circle\_drawer</artifactId>
+		<artifactId>circle_drawer</artifactId>
 		<version>0.0.1</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
-	<groupId>com.drawer.circle.plugins.red\_circle</groupId>
-	<artifactId>red\_circle</artifactId>
+	<groupId>com.drawer.circle.plugins.red_circle</groupId>
+	<artifactId>red_circle</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>com.drawer.circle.app</groupId>
