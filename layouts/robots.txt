@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hariss-notes.mashkarharis.online/sitemap.xml
