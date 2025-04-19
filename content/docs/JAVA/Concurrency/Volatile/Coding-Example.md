@@ -5,7 +5,7 @@ weight: 200
 
 ![](/images/Screenshot%202025-01-29%20123137.png)
 
-This is a continuation of article [Java : What is Volatile ?](/docs/java/volatile/what-is-volatile/)
+This is a continuation of article [Java : What is Volatile ?](/docs/java/concurrency/volatile/what-is-volatile/)
 
 **Quick Recap** 
 

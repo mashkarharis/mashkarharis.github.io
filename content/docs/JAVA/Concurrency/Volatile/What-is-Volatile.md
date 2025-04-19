@@ -79,6 +79,6 @@ Note: When a variable is not shared between multiple threads, we do not need to 
 - ***Synchronized***: It restricts the execution of a code block until a thread acquires the necessary lock.
 - ***Volatile***: This deals with memory caching and ensures visibility of changes across threads.
 
-Next, let's understand the volatile keyword with a coding example : [Java : Volatile Coding Example](/docs/java/volatile/coding-example/)
+Next, let's understand the volatile keyword with a coding example : [Java : Volatile Coding Example](/docs/java/concurrency/volatile/coding-example/)
 
 Happy Coding 🙌

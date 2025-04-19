@@ -124,8 +124,7 @@ I write these posts to improve my knowledge and contribute back to the dev commu
 
 <h3>📬 Feel Free to Connect with Me</h3>
 
-- 💼 **LinkedIn**: [linkedin.com/in/mashkarharis](https://lk.linkedin.com/in/mashkarharis)  
-- 📥 **Email**: [haris.18@cse.mrt.ac.lk](mailto:haris.18@cse.mrt.ac.lk)
+- 💼 **LinkedIn**: [linkedin.com/in/mashkarharis](https://lk.linkedin.com/in/mashkarharis)
 
 ---
 
