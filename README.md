@@ -15,3 +15,13 @@
 # Correct and Finalize
 
 [Link](https://resilience4j.readme.io/docs/examples)
+
+hugo server --minify --theme hugo-book
+
+
+TODO:
+
+-> Transactions 
+-- Isolation Levels
+-- Propogation Levels
+-- How to solve common issues
