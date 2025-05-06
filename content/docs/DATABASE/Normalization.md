@@ -31,11 +31,11 @@ Note that X -> Y, simply means using X we can determine Y
 
 In the first normalization form, we ensure that the values in each column are atomic, which means they cannot be further divided. The main aim of this is to avoid multivalued cells. Let’s consider an example in the following table.
 
-![](/images/1*xhr4AatisvsSgD7jcMdFeQ.png)
+![](/images/1_xhr4AatisvsSgD7jcMdFeQ.png)
 
 Here we can see multiple lecturers teaching one subject. Hence, the table has multivalued cells. This contradicts the first normal form. So we have to create separate rows for each multi\-valued cell as shown below.
 
-![](/images/1*4UwCACRx1XA9OvGiOo5JTg.png)
+![](/images/1_4UwCACRx1XA9OvGiOo5JTg.png)
 
 Now we can see the table is in 1NF.
 
@@ -59,7 +59,7 @@ These types of dependencies are called Partial Dependencies. However, to achieve
 
 Following are the tables we get after removing these partial dependencies.
 
-![](/images/1*GliGlJPYy1ZcAbxncj_5Ug.png)
+![](/images/1_GliGlJPYy1ZcAbxncj_5Ug.png)
 
 Here we can see that no partial dependencies are remaining. Hence, now it satisfies 2NF.
 
@@ -86,7 +86,7 @@ We need to update Region each time we update City
 
 Here are the tables after removing transitive dependencies.
 
-![](/images/1*BpZacmsxWLSmAADDCJ1c9Q.png)
+![](/images/1_BpZacmsxWLSmAADDCJ1c9Q.png)
 
 Here we can see, that no transitive dependencies are remaining. So now it satisfies 3NF.
 
@@ -96,7 +96,7 @@ BCNF is the advanced version of 3NF. In order to become BCNF, the following cond
 
 As discussed so far, the tables are in 3NF. Now, we can decompose the above tables as follows, in such a way that it satisfies the 4th condition,
 
-![](/images/1*qLh_SEPLl9tPtJYqlhzz-w.png)
+![](/images/1_qLh_SEPLl9tPtJYqlhzz-w.png)
 
 Likewise, we can continue applying more levels of database normalization, such as 4NF and 5NF. However, in this article, we discussed only up to BCNF. By adhering to the principles of normalization, databases can be designed and maintained more efficiently, leading to better overall data management and system performance.
 
