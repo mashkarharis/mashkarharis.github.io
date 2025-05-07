@@ -21,7 +21,7 @@ hugo server --minify --theme hugo-book
 
 TODO:
 
--- Isolation Levels
--- Isolation Levels 2
--- Propogation Levels
+<!-- -- Isolation Levels -->
+<!-- -- Isolation Levels 2 -->
+<!-- -- Propogation Levels -->
 -- How to solve common issues
