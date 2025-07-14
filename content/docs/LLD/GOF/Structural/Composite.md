@@ -6,8 +6,7 @@ weight: 300
 
 ## Introduction
 
-According to GOF, Composite Design Pattern falls under Structural Design Patterns. 
-Because this pattern is more about, how we compose hierachical object sturcture to process data effiiently.
+According to GOF, the Composite Design Pattern falls under Structural Design Patterns because this pattern focuses on how we compose hierarchical object structures to process data efficiently.
 
 According to GOF definition,
 ```text
@@ -16,28 +15,27 @@ Compose objects into tree structure to represent part-whole hierarchies. Composi
 
 ## When to Use
 
-This pattern is used in cases which has,
-- Higherarchical Object storage, where Object holds other objects in next level of hierachy like a tree structure
-- Client programme uses only common method across all objects in the hierachy, and process each nodes similarly.
+This pattern is used in cases where,
+- There is hierarchical object storage, where an object holds other objects in the next level of the hierarchy like a tree structure.
+- The client program uses only common methods across all objects in the hierarchy and processes each node similarly.
 
 ## Example
 
-One of the best example we can us this pattern is how we can process FileStorage in a System.
+One of the best examples of using this pattern is how we process File Storage in a system.
 
-FileStorage usually have two types of Objects,
+File storage usually has two types of objects,
 
-- File : Single Unit of Object in the Hierachy with no childs (We call this as leaf)
-- Folder : Compostie Object Which can hold Other child Objects (Single / Composite) in the Hierachy (We call this Composite)
+- `File` : A single unit of the hierarchy with no children (we call this a leaf)
+- `Folder` : A composite object that can hold other child objects (single or composite) in the hierarchy (we call this a composite)
 
-As we know there are lot of methods which is common to files and folders. FOr our programme we use display(), getSize(), displayList() methods,
-which is common to Both Files and FOlders. Functions are as below,
+As we know, there are many methods common to files and folders. For our program, we use `display()`, `getSize()`, and `displayList()` methods, which are common to both files and folders. Functions are as follows`,
 
-- displayList() : Return the structure and size of elements in underlying tree as string array
-- display() : Print the structure and size of elements in underlying tree
-- getSize() : Return total size of all undelying elements in the tree
+- `displayList()` : Returns the structure and size of elements in the underlying tree as a string array
+- `display()` : Prints the structure and size of elements in the underlying tree
+- `getSize()` : Returns the total size of all underlying elements in the tree
 
 ### Component
-First we need to define and interface to store this common methods. This inerface is called as "Component".
+First, we need to define an interface to store these common methods. This interface is called the `Component`.
 ```java
 sealed interface StorageEntity permits File, Folder {
 
@@ -50,7 +48,7 @@ sealed interface StorageEntity permits File, Folder {
 }
 ```
 ### Leaf
-Then we need to define our leaf object, which is the simplest unit, which does not hold children. In our example, this is `File`.
+Next, we define our leaf object, which is the simplest unit and does not hold children. In our example, this is `File`.
 ```java
 final class File implements StorageEntity {
 
@@ -80,7 +78,7 @@ final class File implements StorageEntity {
 }
 ```
 ### Composite
-Next we will define our composite object, which processes it self and all it's children
+Next, we define our composite object, which processes itself and all its children
 ```java
 final class Folder implements StorageEntity {
 
@@ -127,7 +125,7 @@ final class Folder implements StorageEntity {
 }
 ```
 ### Client
-Now let's build some simple storage hierachy to test our Composite Design Pattern example.
+Now let's build a simple storage hierarchy to test our `Composite Design Pattern` example.
 ```java
 class Client {
 
@@ -174,7 +172,7 @@ class Client {
 }
 ```
 ### Output
-Here is what we will get as our output,
+Here is what we get as our output,
 ```text
 [D] ROOT [T] 49.50 KB
     [D] CAMERA ROLL [T] 44.40 KB
@@ -191,13 +189,12 @@ Here is what we will get as our output,
         - ss2.jpeg : 2.30 KB
         - ss3.jpeg : 1.70 KB
 ```
-## Wrapup
-As discussed so far this pattern is more about handling tree like hiearchical strcutre to,
-- create complex structures dynamically and process them more efficiently.
-- reduce lot of duplicate codes by allowing use process each element through common component interface.
-- create hiearchy once and process multiple ways as we needed, which saves memeory and ttime for recreation and allocate new objects each time.
+## Wrap-up
+As discussed so far, this pattern is about handling tree like hierarchical structures to,
+- Create complex structures dynamically and process them efficiently.
+- Reduce duplicate code by allowing processing of each element through a common Component interface.
+- Create a hierarchy once and process it in multiple ways as needed, saving memory and time by avoiding recreation of new objects each time.
 
-Hope this article was helpful.
-Thank you !
-
+Hope this article was helpful.\
+Thank you !\
 Happy Coding 🙌
